@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(11, 74, 99);
+}
+.innerDiv{
+    display: flex;
+    align-items: center;
+}
+.innerDiv h1{
+    font-size: 170px;
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(8, 55, 70);
+}
+.main-heading{
+    display: flex;
+    color: rgb(216, 205, 107);
+
+
+}
+body img{
+    position: absolute;
+    align-items: center;
+    /* margin-top: 150px; */
+    margin: 200px 550px;
+    width: 290px;
+    height: 300px
+}
+button {
+    display: inline-block;
+    background: yellow;
+    color: rgb(0, 91, 170);
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 3px;
+    transition: 400ms;
+    text-decoration: none;
+    padding: 10px;
+    z-index: 100000;
+    margin:500px 100px 10px 10px;
+    padding: 10px 100px;
+}
