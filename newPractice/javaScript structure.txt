@@ -1,0 +1,142 @@
+#introduction (cross platform, object oriented, scripting lang)
+firstclass function
+
+ECMAScript 2022, the 13th and current version, was released in June 2022. 
+
+#datatypes -> primitive, non-premitive
+#keywords
+#variables
+#isNaN(), Number(), str.valueOf()
+#Coercion -> type conversion
+#dynamic typing
+#==,===
+#scop ->(func, Block, Lexical)
+#expression vs statement 
+#type conversion ( Implicit conv, Explicit Conv)
+#operators - (comparasion,bitwise,arithmetic)
+
+'use strict'
+
+
+#function Callback
+types, syntax
+passing function to function argunent (higher order fn)
+function returning fn
+default parameter
+rest paramerter
+parameter destructuring
+function callbacks
+function closure  ->  retains the values of outer fn variables
+function curring -> converting multiple fn parameter ->(fn returning function) sum(a)(b)
+Hoisting -> using variable values before initialization
+functions (IIFE, trad, lamda, function declaration, function expression)
+
+
+
+#conditions
+if, if else, else if ladder
+ternary condition
+switch
+
+
+#loops
+for while dowhile
+break continue
+for of , for in, sort, forEach
+
+
+#Patterns
+
+#recursion
+
+#String
+
+#Set
+set, has
+
+
+#Map
+set(k,v),get()
+add - array, obj
+
+
+#array
+typeby  value/reference
+destructuring, clone spread const
+filter, map, reduce-> arr.reduce(callback(accu,cv,ci),iv)
+higher order fn->(map, filter, sort, reduce and bind)
+higher order function or callback function
+array method
+
+
+
+#objects
+obj2 = Object.assign({},obj)  -> {...obj}
+this, window
+bind method binds an object with function
+object assign	
+optional channing->?
+nullish coalescing operator -> ?? nullish operator ->null, undefined(||->0)
+compose and pipe -> when a fn return a value is used by other fuction
+products.slice(0).sort((a,b)=> a.price - b.price)
+-getter, setter
+call, apply extra args in call can be passesd as arr ['str',val]
+user1.fn.call(user2, 'opti..') , fn.apply(user1, [ optional ]), bind same as call but return func after bind func = fn.bind(user2, 'optional')
+function creates an object
+obj2 = Object.create(obj1) and without create
+__proto__ , [[prototype]] reference of a chaining
+
+
+
+#objects
+spread operatior in obj
+obj inside array
+nested destructuring
+// prototype  is a object
+constructor function     Capi..l
+//function as object
+prototype is an object available in func
+fn.property = 'dddd'   function + object
+fn.name
+fn.prototype property
+clg(fn.prototype)
+
+this keyword in object or function or arrow fn
+what is __proto__, [[prototype]]
+
+new keyword
+1 creates empty object = {}
+2 return this
+3 Object.create(createUser.prototype)
+
+constructur function
+proto and prototype
+
+
+#iterables str,arr
+
+
+#try catch
+
+#microtask queue
+
+
+
+
+#Classes
+constructor
+extend
+super
+
+
+
+
+#event propogation (stopPropagation())
+
+
+#DOM
+this,===, window
+setTimeOut,setInterval,events
+
+# some Api's
+https://randomuser.me/api/
