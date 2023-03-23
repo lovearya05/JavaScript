@@ -24,7 +24,7 @@ passing function to function argunent (higher order fn)
 function returning fn
 default parameter
 rest paramerter
-parameter destructuring
+parameter destructuring 
 function callbacks
 function closure  ->  retains the values of outer fn variables
 function curring -> converting multiple fn parameter ->(fn returning function) sum(a)(b)
@@ -81,10 +81,15 @@ compose and pipe -> when a fn return a value is used by other fuction
 products.slice(0).sort((a,b)=> a.price - b.price)
 -getter, setter
 call, apply extra args in call can be passesd as arr ['str',val]
+The call() method takes arguments separately.
+The apply() method takes arguments as an array
 user1.fn.call(user2, 'opti..') , fn.apply(user1, [ optional ]), bind same as call but return func after bind func = fn.bind(user2, 'optional')
 function creates an object
 obj2 = Object.create(obj1) and without create
 __proto__ , [[prototype]] reference of a chaining
+
+iterator generators
+yield keyword
 
 
 
@@ -129,13 +134,31 @@ extend
 super
 
 
+i)#compilation phase
+ii)code execution
+tokenizing/ lexical
+parsing
+code generation
+early stage 
+1 early error checking
+2 Determ.. appropate scope of variables 
+ 
+TDZ tempDeadZone Refrc Err
 
 
 #event propogation (stopPropagation())
 
 
 #DOM
+defer
 this,===, window
+getelement by id
+query selector
+querySelectorAll
+textContent, innertext
+getRootNode,  childNodes[0], nextSibling, children
+classList, add, contains(), remove, toggle()
+createTextNode("") create text element
 setTimeOut,setInterval,events
 
 # some Api's
