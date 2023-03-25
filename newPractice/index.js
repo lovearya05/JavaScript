@@ -568,42 +568,7 @@
 // console.log(arrIter.next()); // e
 
 
-// var a = '10'
 
-// // console.log(a-2)
-// console.log(parseInt(a))
-// a = parseInt(a)
-
-// console.log(Number.isInteger(a))
-
-// 'use strict'
-
-// a = 10
-// console.log(a)
-
-// var arr = [1,2,3]
-
-// function sum([a,b,c]){
-//     console.log(a+b+c)
-// }
-
-// sum(arr)
-
-// const [a,...b] = arr
-
-// console.log(a,b)
-
-// function a(x,y){
-//     var z = 10
-//     function b(){
-//         console.log(x,y,z)
-//     }
-//     return b
-// }
-
-// const fn = a(5,7)
-// console.log(fn)
-// fn()
 
 // const obj = {
 //     name : 'Rohan',
@@ -627,7 +592,6 @@
 // console.log(obj2)
 
 // console.log("deep Copy")
-
 // const obj3 = lodash.cloneDeep(obj)
 
 // console.log(obj===obj3)
@@ -679,53 +643,6 @@
 
 
 
-
-
-// console.log("hello")
-// var 
-// let
-// const 
-
-
-// const abc = 5
-
-// b = 8
-
-// console.log(abc)
-
-// 'sadfhsjadh', " rdfsdf", `jsdfhsdj`
-
-// var a = 6
-// var str = `age  is : ${a}`
-// console.log(str)
-
-
-// var x = 10
-
-// {
-//     x = 20
-//     console.log(x)
-// }
-
-
-// console.log(x)
-
-
-
-// const obj = new Object()
-
-// obj.gender = 'M'
- 
-
-// for(let val in obj){
-    //     if(obj[val]===){
-
-//     }
-
-//     console.log( val, " -> ", obj[val])
-// }
-
-// console.log(obj.user)
 
 // iterator -> for,while 
 
@@ -967,7 +884,7 @@
 
 
 
-
+// constructor function
 // 1st way 
 
 // const result = {
@@ -1061,14 +978,14 @@
 //         mornigHobby : "walking",
 //         evgHobby : 'playing',
 //         // watching : 'video',
-//         nighJHobby : {
+//         nightHobby : {
 //             using : "mobile",
 //             watching : "TV"
 //         }
 //     }
 // }
 
-// console.log(obj?.hobbies?.nighJHobby?.watching)
+// console.log(obj?.hobbies?.nightHobby?.watching)
 
 // function* fn(index){
 //     while(index<2){
@@ -1105,3 +1022,4 @@
 // console.log(iter.next())
 // console.log(iter.next())
 // console.log(iter.next())
+

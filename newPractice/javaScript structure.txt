@@ -94,7 +94,7 @@ yield keyword
 
 
 #objects
-spread operatior in obj
+spread operatior in obj , destructuring
 obj inside array
 nested destructuring
 // prototype  is a object
@@ -149,6 +149,11 @@ TDZ tempDeadZone Refrc Err
 #event propogation (stopPropagation())
 
 
+jsEngine  ->  web api
+chrome v8
+firefox spider monkey
+
+
 #DOM
 defer
 this,===, window
@@ -159,7 +164,37 @@ textContent, innertext
 getRootNode,  childNodes[0], nextSibling, children
 classList, add, contains(), remove, toggle()
 createTextNode("") create text element
-setTimeOut,setInterval,events
+event capturing, bubbling
+event delegation
+colorborder
+
+
+
+Asynchronous JS
+is js/Syn or Asy
+setTimeOut,
+setInterval,
+settimeout 0millisec
+callback quee
+callback in general
+callback in programming
+callback hell and pyramid of doom
+intro to promis
+microtask quee
+fuction return promise
+promise and settimeout
+promise.resolve and more about then method
+convert nested callbacks to flat code  using promises
+intro to ajax, http requests
+xhr requests
+error handeling in xhr requests
+xhr request chaining
+promisifying xhr requests and chaining using then method
+fetch api
+error handeling in fetch api
+consume promises with async and await
+split code into multiple files using ES6 modules
+
 
 # some Api's
 https://randomuser.me/api/
