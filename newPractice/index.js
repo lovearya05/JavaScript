@@ -484,29 +484,29 @@
 // console.log(Object.getPrototypeOf(user1))
 
 
-// class Animal{
-//     constructor(name,age){
-//         this.name = name
-//         this.age = age
-//     }
-//     eat(){
-//         return `${this.name} is eating`
-//     }
-// }
+class Animal{
+    constructor(name,age){
+        this.name = name
+        this.age = age
+    }
+    eat(){
+        return `${this.name} is eating`
+    }
+}
 
 
-// class Dog extends Animal{
-//     constructor(name, age, speed){
-//         super(name, age)
-//         this.speed  = speed
-//     }
+class Dog extends Animal{
+    constructor(name, age, speed){
+        super(name, age)
+        this.speed  = speed
+    }
 
-//     run(){
-//         return `${this.name} is run at ${this.speed}`
-//     }
-// }
+    run(){
+        return `${this.name} is run at ${this.speed}`
+    }
+}
 
-// const tommy = new Dog('tommy', 12, 45)
+const tommy = new Dog('tommy', 12, 45)
 
 // console.log(tommy.eat())
 // console.log(tommy.run())
@@ -1024,4 +1024,261 @@
 // console.log(iter.next())
 
 
- 
+
+
+//  class solve{
+//     constructor(name,age){
+//         this.name = name
+//         this.age = age        
+//     }
+
+//     about = function(){
+//         return `name is :${this.name} age is : ${this.age}`
+//     }
+
+//     is18 = function(){
+//         return 18<=this.age
+//     }
+    
+//  }
+
+//  const obj = new solve('pargat', 20)
+//  const stu1 = new solve('Ankit', 24)
+
+// //  console.log(obj)
+
+// console.log(obj.is18())
+// console.log(obj.about())
+
+// stu1.name = 'Lalit'
+// stu1.hobby = 'Dance'
+
+// console.log(stu1)
+
+// for(let x in obj){
+//     console.log(obj[x])
+// }
+
+
+// class details{
+//     #hobby = 'dance'
+//     constructor(name,sub1,sub2,sub3,sub4){
+//         this.name = name
+//         this.sub1 = sub1
+//         this.sub2 = sub2
+//         this.sub3 = sub3
+//         this.sub4 = sub4
+//     }  
+//     tell(){
+//         return `${this.#hobby}`
+//     }
+//     setter(name){
+//         this.name = name
+//     }
+//     getter(){
+//         return this.name
+//     }
+// }
+
+// class student extends details {
+//     constructor(name,sub1,sub2,sub3,sub4){
+//         super(name,sub1,sub2,sub3,sub4)
+//     }
+
+//     result(){
+//         console.log('name is :', this.name)
+//         console.log('Avg Marks : ', (this.sub1+this.sub2+this.sub3+this.sub4)/4)
+//     }
+    
+//     about(){
+//         console.log('name : ',this.name)
+//     }
+
+//     static hii(){
+//         console.log('static---')
+//     }
+
+// }
+
+// const s1 = new student('yubin',55,77,22,97)
+// const s2 = new student('rohan',75,77,22,37)
+// const s3 = new student('pinku',55,04,47,97)
+
+// s1.setter('kamal')
+// console.log(s1.tell())
+
+// s1.about()
+// s1.result()
+// s2.result()
+// s3.result()
+
+
+
+// const arr = [1,3,2,3]
+
+//  const ans = arr.reduce((acc,cv,idx)=>{
+
+//     if(cv===idx){
+//         return acc+cv
+//     }
+
+//     return acc
+    
+//     // if(cv%2===0){
+//     //     return acc + cv
+//     // }else{
+//     //     return acc - cv
+//     // }
+
+// },0)
+
+// console.log(ans)
+
+
+// const emp = [200,400,200,50,200]
+
+// var total = 2000
+
+// const rem = emp.reduce((acc,cv)=>{
+//     return acc - cv
+// },total)
+
+// console.log(rem)
+
+// map , reduce ,filter higher order fn 
+
+
+// const arr = [1,2,3]
+
+// const iter = arr.entries()
+// console.log(iter.next())
+// console.log(iter.next())
+// console.log(iter.next())
+// console.log(iter.next())
+
+
+// var i = 0
+// function entries(){
+    //     if(i<arr.length){
+        //         return {value : arr[i++], done : 'false'}
+        //     }else{
+            //         return {value : undefined, done : 'true'}
+            //     }
+            // }
+            
+            // console.log(entries())
+            // console.log(entries())
+            // console.log(entries())
+            // console.log(entries())
+            // console.log(entries())
+            
+// const arr = [1,2,3,8]
+
+// const ans = arr.some((cv)=> cv<5)
+// console.log(ans)
+
+
+
+// const ele = document.getElementById('para')
+
+// ele.innerText = 'yoooooooo'
+// ele.innerHTML = 'yoooooooo'
+// ele.style.color = 'red'
+// ele.style.fontSize = '30px'
+// console.log(ele.innerHTML)
+
+// document.title = 'Home'
+// console.log(document.title)
+
+
+// var , let , const 
+
+// data types ,
+
+Number, Boolean, String, Symbol, undefined, null, Object, BigInt
+
+// '', "", ``
+
+// var a = 'A'
+
+// console.log(a.charCodeAt(0))
+
+
+
+// console.log(String.fromCharCode(c))
+
+// var a = null
+
+// console.log(a)
+
+// non premitive 
+// Array, object, class, 
+
+// var a = 1234567890n
+// var a = BigInt(12345678234567)
+// console.log(a)
+
+// console.log(Number.MIN_SAFE_INTEGER)
+
+
+
+// var a = 123n
+// var b = 234
+
+// console.log(a+ BigInt(b))
+
+// var a = 10
+
+// var b = 2
+
+// console.log((a|b))
+
+
+// console.log(4**4)
+
+// ++ , -- 
+
+// var a = 5
+// ++a
+// a++
+// console.log(--a) 
+// a--
+// console.log(++a) 
+// console.log(a--)  
+// --a
+// console.log(++a) 
+
+// const colors = ['red', 'green', 'black', 'blue','yellow']
+
+const ele = document.getElementsByClassName('para')
+
+// console.log(ele)
+
+// var i = 0
+
+// for(let e of ele){
+//     e.style.color = colors[i++]
+//     i %= colors.length
+// }
+
+// for(let i=0;i<ele.length;i++){
+//     if(i%2==0){
+//         ele[i].style.color = 'red'
+//     }else{
+//         ele[i].style.color = 'green'
+//     }
+// }
+
+
+// const ChangeImage = function(){
+//     const img = document.getElementById('img')
+//     const ht = img.style.height
+//     const wd = img.style.width
+
+//     console.log(ht, wd)
+
+//     img.src = './d2.webp'
+//     img.style.height = ht
+//     img.style.width = wd
+    
+// }
