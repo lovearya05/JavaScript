@@ -3,7 +3,7 @@ firstclass function
 
 ECMAScript 2022, the 13th and current version, was released in June 2022. 
 
-#datatypes -> primitive, non-premitive
+#datatypes -> primitive,  non-premitive
 #keywords
 #variables
 #isNaN(), Number(), str.valueOf()

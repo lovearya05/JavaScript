@@ -7,6 +7,10 @@
 //     },3000)
 // }
 
+// const { forEach, invoke } = require("lodash");
+
+// const { set } = require("lodash")
+
 
 
 // function
@@ -136,54 +140,51 @@
 //     }
 // }
 
+// console.log(obj1.fn())
+
 // var obj2 = {
-//     name : "world",
-    // __proto__ : obj1
+//   name : "world",
+//   __proto__ : obj1
 // }
 
 
-// // console.log(obj2.age)
-// // obj1.name = "Rohi"
+// console.log(obj2.fn())
+
+// console.log(obj2.age)
+// obj1.name = "Rohi"
 // console.log(obj2.fn());
-
-// var a = "this is a tutorial this"
-// console.log(a)
-// a = a.replaceAll("this", "do")
-// console.log(a)
-
-
 
 
 // var obj1 = {
 //     name : "sonam",
 //     age : 21,
-//     // obj2:{
-//     //     name:"komal"
-//     // }
+//     obj2:{
+//         name:"komal"
+//     }
 // }
 
 
 
 
 // for(let val in obj1){
-    //     console.log(val, " ", obj1[val])
-    // }
-    // console.log(obj1?.obj2?.name)
-    
-    
-    // var a = false ?? null ?? 0 ?? 9 ?? null
-    // var a = false || 2
-    
-    // console.log(a)
-    
+//     console.log(val, " ", obj1[val])
+// }
+// console.log(obj1?.obj2?.name)
+
+
+var a = false ?? null ?? 0 ?? 9 ?? null
+var a = false || 2
+
+console.log(a)
 
 
 
-    //  Array
 
-    // var arr = [1,2,4,5,67,3]
-    // var brr = arr.sort((a,b)=>a-b)
-    // console.log(brr)
+//  Array
+
+// var arr = [1,2,4,5,67,3]
+// var brr = arr.sort((a,b)=>a-b)
+// console.log(brr)
 
 
 
@@ -237,19 +238,19 @@
 // classes in js
 
 // class abc {
-    // #name = "parot"
-    // #age = 20
-    // constructor(name, age){
-    //     this.name  = name;
-    //     let date = new Date();
-    //     console.log(date);
-    //     this.age = date.getFullYear() - age;
-    // }
+// #name = "parot"
+// #age = 20
+// constructor(name, age){
+//     this.name  = name;
+//     let date = new Date();
+//     console.log(date);
+//     this.age = date.getFullYear() - age;
+// }
 
-    // fun(){
-    //     console.log("name is :", this.#name ,"and age is : ", this.#age)
-    // }
-    // fun()
+// fun(){
+//     console.log("name is :", this.#name ,"and age is : ", this.#age)
+// }
+// fun()
 
 // }
 
@@ -327,8 +328,6 @@
 
 
 // var str = '({"firstName":"Bill","lastName":"Gates" })';
-	
-// var obj = eval(str);
 
 // console.log(obj.firstName)
 
@@ -397,27 +396,27 @@
 // let date = new Date();
 
 
-// const userMethod = {
-//     about : function(){
-//         return `name : ${this.name}`
-//     },
-//     is18 : function(){
-//         return this.age >=18
-//     },
-//     sing : function(){
-//         return 'la la la oh ho hooo'
-//     }
-// }
+const userMethod = {
+    about : function(){
+        return `name : ${this.name}`
+    },
+    is18 : function(){
+        return this.age >=18
+    },
+    sing : function(){
+        return 'la la la oh ho hooo'
+    }
+}
 
 // function createUser(name, age, email, address){
-//     // const user = {}
 //     const user = Object.create(userMethod)
 //     user.name = name
 //     user.age = age
 //     user.email = email
 //     user.address = address
 //     return user;
-
+    
+//     // const user = {}
 //     // user.about = userMethod.about
 //     // user.is18 = userMethod.is18
 //     // user.sing = userMethod.sing
@@ -466,11 +465,11 @@
 //         this.email = email;
 //         this.address = address;        
 //     }
-    
+
 //     about(){
 //         return `name : ${this.name} age : ${this.age}`
 //     }
-    
+
 //     is18(){
 //         return this.age>=18
 //     }
@@ -484,32 +483,32 @@
 // console.log(Object.getPrototypeOf(user1))
 
 
-class Animal{
-    constructor(name,age){
-        this.name = name
-        this.age = age
-    }
-    eat(){
-        return `${this.name} is eating`
-    }
-}
+// class Animal {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+//     eat() {
+//         return `${this.name} is eating`
+//     }
+// }
 
 
-class Dog extends Animal{
-    constructor(name, age, speed){
-        super(name, age)
-        this.speed  = speed
-    }
+// class Dog extends Animal {
+//     constructor(name, age, speed) {
+//         super(name, age)
+//         this.speed = speed
+//     }
 
-    run(){
-        return `${this.name} is run at ${this.speed}`
-    }
-}
+//     run() {
+//         return `${this.name} is run at ${this.speed}`
+//     }
+// }
 
-const tommy = new Dog('tommy', 12, 45)
+// const tommy = new Dog('tommy', 12, 45)
 
-// console.log(tommy.eat())
-// console.log(tommy.run())
+// // console.log(tommy.eat())
+// // console.log(tommy.run())
 
 
 
@@ -517,7 +516,7 @@ const tommy = new Dog('tommy', 12, 45)
 
 
 // array methods
-    
+
 // var arr = [10,6,9,3,4,5,6]
 // var arr = [10,6,9,3,4,5,6]
 
@@ -531,28 +530,28 @@ const tommy = new Dog('tommy', 12, 45)
 // console.log(arr)
 // const ans = arr.fill("hi",1,3)
 // const ans = arr.find((val)=>{
-    //     if(val>3) return true
-    // })
-    
-    // const ans = arr.every((val)=> val>2 )
-    // const ans = arr.findIndex((val)=> val==3)
-    
-    // console.log(arr)
+//     if(val>3) return true
+// })
+
+// const ans = arr.every((val)=> val>2 )
+// const ans = arr.findIndex((val)=> val==3)
+
+// console.log(arr)
 
 
 
-    // var arr = [3,5,1,5]
+// var arr = [3,5,1,5]
 
-    // console.log(arr[3][3][1])
+// console.log(arr[3][3][1])
 
-    // const ans = arr.flat(10)
-    
-    // const ans = arr.flat(10).includes(8)
-    // const ans = arr.flat(10).indexOf(3)
+// const ans = arr.flat(10)
 
-    // console.log(arr)
+// const ans = arr.flat(10).includes(8)
+// const ans = arr.flat(10).indexOf(3)
 
-    // console.log(ans)
+// console.log(arr)
+
+// console.log(ans)
 
 
 // const arr = ["a", "b", "c", "d", "e"];
@@ -648,7 +647,7 @@ const tommy = new Dog('tommy', 12, 45)
 
 
 // const arr  = [
-    //     {name : 'kamal'},
+//     {name : 'kamal'},
 //     {name : 'Rohan'},
 //     {name : 'Deepika'},
 // ]
@@ -658,7 +657,7 @@ const tommy = new Dog('tommy', 12, 45)
 // }
 
 // arr.map((val)=>{
-    //     console.log(val)
+//     console.log(val)
 // })
 
 // const obj = {
@@ -669,7 +668,7 @@ const tommy = new Dog('tommy', 12, 45)
 //     fn : function() {
 //         return `name : ${this.name} age : ${this.age}`
 //     }
-    
+
 // }
 
 // const obj1 = {
@@ -725,13 +724,6 @@ const tommy = new Dog('tommy', 12, 45)
 
 // // console.log(obj)
 // // const obj2 = userDetails.about.bind(obj)
-
-
-
-
-
-
-
 
 
 
@@ -839,48 +831,6 @@ const tommy = new Dog('tommy', 12, 45)
 // fitness plnning app
 
 
-
-
-
-
-// console.log("Hiii")
-// console.log("Hiii")
-
-// var, let const 
-
-// var a  = 'hello'
-// var a = 10
-// console.log(typeof a)
-
-// let a = 4
-// console.log(a)
-
-// const b = 7
-// b = 8
-
-// console.log(b)
-
-// var a = 5
-
-// a = 6
-
-// console.log(a)
-
-
-// let a = 10
-
-// {
-//     let a = 40
-//     console.log(a)
-// }
-
-// console.log(a)
-
-// var x = 10
-// // '', "" , ``
-// var a = `hell ${x} s`
-
-// console.log(a)
 
 
 
@@ -1039,7 +989,7 @@ const tommy = new Dog('tommy', 12, 45)
 //     is18 = function(){
 //         return 18<=this.age
 //     }
-    
+
 //  }
 
 //  const obj = new solve('pargat', 20)
@@ -1089,7 +1039,7 @@ const tommy = new Dog('tommy', 12, 45)
 //         console.log('name is :', this.name)
 //         console.log('Avg Marks : ', (this.sub1+this.sub2+this.sub3+this.sub4)/4)
 //     }
-    
+
 //     about(){
 //         console.log('name : ',this.name)
 //     }
@@ -1123,7 +1073,7 @@ const tommy = new Dog('tommy', 12, 45)
 //     }
 
 //     return acc
-    
+
 //     // if(cv%2===0){
 //     //     return acc + cv
 //     // }else{
@@ -1159,19 +1109,19 @@ const tommy = new Dog('tommy', 12, 45)
 
 // var i = 0
 // function entries(){
-    //     if(i<arr.length){
-        //         return {value : arr[i++], done : 'false'}
-        //     }else{
-            //         return {value : undefined, done : 'true'}
-            //     }
-            // }
-            
-            // console.log(entries())
-            // console.log(entries())
-            // console.log(entries())
-            // console.log(entries())
-            // console.log(entries())
-            
+//     if(i<arr.length){
+//         return {value : arr[i++], done : 'false'}
+//     }else{
+//         return {value : undefined, done : 'true'}
+//     }
+// }
+
+// console.log(entries())
+// console.log(entries())
+// console.log(entries())
+// console.log(entries())
+// console.log(entries())
+
 // const arr = [1,2,3,8]
 
 // const ans = arr.some((cv)=> cv<5)
@@ -1191,66 +1141,9 @@ const tommy = new Dog('tommy', 12, 45)
 // console.log(document.title)
 
 
-// var , let , const 
-
-// data types ,
-
-Number, Boolean, String, Symbol, undefined, null, Object, BigInt
-
-// '', "", ``
-
-// var a = 'A'
-
-// console.log(a.charCodeAt(0))
-
-
-
-// console.log(String.fromCharCode(c))
-
-// var a = null
-
-// console.log(a)
-
-// non premitive 
-// Array, object, class, 
-
-// var a = 1234567890n
-// var a = BigInt(12345678234567)
-// console.log(a)
-
-// console.log(Number.MIN_SAFE_INTEGER)
-
-
-
-// var a = 123n
-// var b = 234
-
-// console.log(a+ BigInt(b))
-
-// var a = 10
-
-// var b = 2
-
-// console.log((a|b))
-
-
-// console.log(4**4)
-
-// ++ , -- 
-
-// var a = 5
-// ++a
-// a++
-// console.log(--a) 
-// a--
-// console.log(++a) 
-// console.log(a--)  
-// --a
-// console.log(++a) 
-
 // const colors = ['red', 'green', 'black', 'blue','yellow']
 
-const ele = document.getElementsByClassName('para')
+// const ele = document.getElementsByClassName('para')
 
 // console.log(ele)
 
@@ -1280,5 +1173,207 @@ const ele = document.getElementsByClassName('para')
 //     img.src = './d2.webp'
 //     img.style.height = ht
 //     img.style.width = wd
-    
+
 // }
+
+
+// var set1 = new Set([3,5])
+
+// set1.add(4)
+// set1.add(6)
+// set1.add(6)
+// set1.add(6)
+// set1.add(6)
+
+// // const t = set1.delete(6)
+// const t = set1.has(633)
+
+// console.log(t)
+
+// console.log(set1)
+
+// set1.forEach((val)=>{
+//     console.log(val)
+// })
+
+// const iter = set1.values()
+
+// console.log(set1.size)
+
+// while(true){
+//     console.log(iter.next())
+// }
+
+// const hobby = 'hby'
+
+// const mp = new Map([[hobby, 'dance'],['class', 'cse']])
+
+// mp.set('arr' , ['name' , 'komal'])
+// mp.set('name' , 'Alka')
+// mp.set('age', 44)
+
+// console.log(mp)
+
+
+// console.log(mp.get('arr'))
+
+// mp.delete('arr')
+
+// console.log( mp.has('age'))
+
+// console.log(mp.get('arr') ? mp.get('arr') : '')
+
+// mp.forEach((val, k, m)=>{
+//     console.log(val, k, m)
+// })
+
+// const iter = mp.entries()
+
+
+// console.log(iter.next())
+// console.log(iter.next())
+// console.log(iter.next())
+// console.log(iter.next())
+// console.log(iter.next())
+
+// console.log(mp.size)
+
+// const date = new Date()
+
+// console.log(date.toLocaleTimeString())
+
+// function change(){
+//     const d1 = document.getElementById('d1')
+//     const d2 = document.getElementById('d2')
+
+
+//     d2.innerHTML = d1.innerHTML
+//     d1.innerHTML = temp.innerHTML
+
+
+//     console.log(d1)
+// }
+
+
+
+// const timeout = setTimeout(() => {
+//     console.log("hiii")
+// }, 3000)
+
+
+
+// setTimeout(()=>{
+//     clearTimeout(timeout)
+// },2000)
+
+
+// var cnt  = 0
+// var sec = 0
+// var min = 0
+// var hrs = 0
+// const inter = setInterval(()=>{
+//     if(cnt===1000){
+//         sec++
+//         if(sec===60){
+//             min++;
+//         }
+//         sec = sec%60
+//         cnt = 0
+//     }
+
+//     console.log(`min : ${min} sec: ${sec} ms:${cnt}`)
+//     cnt++;
+// },0)
+
+
+// setTimeout(()=>{
+//     clearInterval(inter)
+// })
+
+
+
+// try{
+
+//     const num = parseInt( Math.random()*11 )
+
+//     if(num>5){
+//         throw 'Number is greater then 5'
+//     }
+//     console.log('number value is :', num)
+
+// }catch(err){
+
+
+//     console.log(err +"--------")
+
+
+// }
+
+// const obj = require('readline-sync')
+
+// const num = obj.questionInt('enter age ')
+
+// try{
+
+//     if(num<18){
+//         throw 'Under Age'
+//     }
+//     console.log('Passed age :', num)
+
+// }catch(err){
+
+//     console.log(err +"--------")
+// }finally{
+//     console.log('executed successfully')
+// }
+
+
+// const url = 'https://641168dbe96e5254e2d49f0f.mockapi.io/test/api/userApi'
+
+
+// try{
+//     // console.log('object')
+//     fetch(url)
+//     .then((res)=> res.json())
+//     .then(data => console.log(data))
+
+// }catch(e){
+//     console.log(e)
+// }
+
+
+// async await 
+
+// function QuestionsMarks(str) { 
+//   res = false;
+//   for(let i=0; i<str.length; i++){
+//       for(let j=i+1; j<str.length; j++){
+//           if(Number(str[i]) + Number(str[j])=== 10){
+//               res = true;
+//               if(str.slice(i,j).split("?").length -1 < 3){
+//                   return false;
+//               }
+//           }
+//       }
+//   }
+//   return res;
+// }
+ 
+
+//   console.log(QuestionsMarks("arrb6???4xxbl5???eee5")); // should return true
+//   console.log(QuestionsMarks("aa6?9"));
+
+
+// for(let i=1;i<=9;i++){
+//     for(let j=1;j<=9;j++){
+//         if(i==5 || i+j==6 || j-i==4 || j==5 && i>5){
+//             process.stdout.write('* ')
+//         }else{
+//             process.stdout.write('  ')
+//         }
+//     }
+
+//     console.log()
+// }
+
+
